@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* all similar content styling codes */
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about, .services, .skills, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+/*nav*/
+.navbar{
+position: fixed;
+width:100%;
+padding: 0 30px;
+/*background-color: crimson;*/
+font-family: 'Ubuntu','sans-serif';
+transition: all 0.3s ease;
+}
+.navbar .sticky{
+    padding: 30px 0 ;
+    background: blanchedalmond ;
+}
+.navbar .logo a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 10px;
+}
+.max-width{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 80px;
+
+}
+.navbar .max-width{
+
+ /*margin:  auto;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+
+}
+.navbar .menu li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: color 0.7s ease; 
+}
+.navbar .menu li a:hover{
+     color:crimson; 
+}
+.navbar .logo a span{
+    color: crimson;
+}
+/*style for home sectio*/
+.home{
+ 
+    display:flex;
+    background: linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%), url('images/richard-horvath-is8jWT-mvng-unsplash.jpeg') no-repeat center;
+    /*background:url("") no-repeat right;*/
+   /* background-size: 600px 500px;*/
+    height: 100vh;
+    color:white;
+    min-height: 500px;
+    font-family: 'Ubuntu','sans-serif';
+}
+.home .max-width{
+    margin: auto 0  auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 30px;
+}
+.home .home-content .text-2{
+    font-size: 50px;
+    font-weight:600px;
+    margin-left: -3px ;
+}
+.home .home-content .text-3{
+    font-size: 35px;
+    font-weight:600px;
+    margin-left: -3px ;
+}
+.home .home-content .text-3 .cursor {
+    
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .home.home-content span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+.home .home-content .text-3 span{
+    color:crimson;
+    font-weight: 500px;
+     
+}
+.home .home-content .catchy-word{
+  font-size: medium;
+    font-weight: 00;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    color: rgb(206, 86, 86);
+    text-shadow: 2px 2px 2px black;
+}
+.home .home-content .btn{
+    display: inline-block;
+    background: rebeccapurple;
+    color: rgb(231, 226, 235);
+    font-size: 25px;
+    padding: 12px 45px;
+    margin-top: auto;
+    border-radius: 10PX;
+    border: 2px solid rebeccapurple;
+transition: all 0.3 ease;
+
+     
+}
+.home .home-content .btn:hover{
+    color: rgb(231, 226, 235);
+    background: none;
+}
+/*responsive*/
+@media(max-width: 991px){
+    .max-width{
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 80px;
+    
+    }
+
+}
+/*hobbies*/
+/* services section styling */
+html {
+    height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    position: relative;
+}
+
+.services {
+    display: block;
+    background: #CFF;
+    height:100%;
+    padding: 60px;
+    padding-left: 120px;
+}
+.services {
+ 
+    height:100%
+    
+}
+.services, .teams{
+    color:#fff;
+    background: #111;
+    
+}
+.services .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.services .title::after,
+.teams .title::after{
+    background: #111;
+    content: "what i like";
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+    background: crimson;
+    width: 300px;
+    height:300px;
+}
+.services .serv-content .card .box{
+    /*transition: all 0.3s ease;*/
+    transition: width 2s, height 4s;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card .blogging{
+    height: 0px;
+    color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+/*skill*/
+/*.skill{
+    background: #111;
+    color: #fff;
+}*/
+* {box-sizing:border-box;
+
+}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #bd5a5a;box-shadow: 5px 10px rgb(52, 50, 158)} /* Green */
+.css {width: 80%; background-color: #32485a;box-shadow: 5px 10px rgb(52, 50, 158)} /* Blue */
+.js {width: 65%; background-color: #e7f436;box-shadow: 5px 10px rgb(52, 50, 158)} /* Red */
+.php {width: 60%; background-color: #9b74e2;  box-shadow: 5px 10px rgb(52, 50, 158);
+} /* Dark Grey */
+.skill{
+    background:linear-gradient(-70deg, #0a0400 5%, rgba(0, 0, 0, 0) 50%), url('images/10-2-6k.jpeg') no-repeat center;
+    display: inline-block;
+     height:100%;
+    width:100%;
+    padding: 60px;
+    padding-left: 120px;
+    box-sizing:border-box;
+    min-height: 500px;
+}
+.skill .max-width{
+    margin: auto 0  auto 40px;
+}
+.text-4{
+    font-size: 30px;
+    color: rgb(24, 19, 20);
+    font-family:"ubuntu",sans-serif;
+    text-shadow: 0 0 5px #ff0000;
+}
+/*contacts*/
+.contacts{
+    background: #111;
+    color: #fff;
+    padding: 60px;
+    padding-left: 120px;
+    box-sizing:border-box;
+    min-height: 1500px;
+    display: inline-block;
+}
+
+  
+  /* Style the container/contact section */
+  .container {
+      text-shadow: crimson;
+    border-radius: 5px;
+    background-color: #ecd9d9;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+ 
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  .contactme{
+      background:linear-gradient(-70deg, #0a0400 10%, rgba(0, 0, 0, 0) 30%), url('images/jeremy-bishop-Gx879ThpqWQ-unsplash.jpeg') no-repeat center; ;
+  }
+  /*contacts*/
+  .row {
+      padding: auto;
+      margin: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+  }
+  .block {
+    width: 100px;
+  }
+  
+  .navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
